@@ -1,16 +1,19 @@
 import time
 import numpy as np
+import argparse
 
-from random_environment import Environment
-from agent import Agent
+from env.random_environment import Environment
+from agent.agent import Agent
 
-
+parser = argparse.ArgumentParser(description = 'Training and Test Random Maze DQN solver')
+parser.add_argument('--visualize', dest = 'visualize', action ='store_true', default=False)
 # Main entry point
 if __name__ == "__main__":
 
     # This determines whether the environment will be displayed on each each step.
     # When we train your code for the 10 minute period, we will not display the environment.
-    display_on = True
+    args = parser.parse_args()
+    display_on = args.visualize
 
     # Create a random seed, which will define the environment
     random_seed = int(time.time())
