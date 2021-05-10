@@ -1,7 +1,8 @@
 # DDQN-maze-solver
 Double Deep Q-Learning Network random maze solving agent
 
-Installation 
+## Installation 
+```
 conda create -n dqn
 source activate dqn
 
@@ -11,3 +12,5 @@ pip install torch
 pip install opencv-python
 
 python train_and_test.py --visualize
+
+```
