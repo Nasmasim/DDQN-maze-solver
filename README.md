@@ -1,8 +1,9 @@
 # DDQN Random Maze Solver 
 
 ## Description 
-Deep DQN implementation to solve a randomly generated maze problem, where an agent has to reach a given goal position. The agent follows a pre-defined set of rules: 
+In Reinforcement Learning, an Agent interacts with an environment while evaluating its state, actions and receiving rewards. The aim is to learn which actions the agent should take to reach the goal. This project presents a deep DQN implementation to solve a randomly generated maze problem, where an agent has to reach a given goal position. The agent follows a pre-defined set of rules: 
 
+* Training time is limited to 10 minutes, thereafter another random maze is generated
 * The magnitude of the action vector is limited to 0.02
 * No tabular reinforcement learning
 * Not allowed any form of memory, other than an experience replay buffer 
