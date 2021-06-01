@@ -7,7 +7,10 @@ Deep DQN implementation to solve a randomly generated maze problem, where an age
 * No tabular reinforcement learning
 * Not allowed any form of memory, other than an experience replay buffer 
 
-![](https://github.com/Nasmasim/DDQN-maze-solver/blob/main/results/maze_gif.gif)
+
+<p align="center">
+<img src= https://github.com/Nasmasim/DDQN-maze-solver/blob/main/results/maze_gif.gif width="50%">
+</p>
 
 
 ## Implementation 
@@ -35,5 +38,5 @@ pip install opencv-python
 ```
 
 ## Running the model   
-python train_and_test.py --visualize
+```python train_and_test.py --visualize``
 
