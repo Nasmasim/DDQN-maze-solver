@@ -18,7 +18,8 @@ The general architecture of the algorithm is a Double Q-Learning algorithm with 
 | class | description |
 | ----- | ------      |
 | Agent | Agent has a set of 3 discrete actions (move up, down and right) and checks if we are in a difficult maze. If yes, then epsilon is decayed more slowly to allow more exploration. The distance between the agent and the goal is converted to a reward |
-| Network | Defines a 4 hidden neural network activated by ReLu with 300 neurons each. 
+| Network | Defines a 4 hidden neural network activated by ReLu with 300 neurons each |
+| DQN | Define the discount rate to 0.99 and learning rate to 0.005 with Adam optimiser. We compute the gradient step to update the Q-network and for each transition compute the argmax value of the Q-value from the target network for the next state. We then compute the Bellman equation and compute the loss between the Q-value for the current state of the Q-network and the predicted one | 
 | ReplayBuffer | Initialised with a large collection deque, from which we sample random transitions during training |
 | GreedyChecker | Stores the minimum distance to the goal so far reached during greedy policy and if this is a good distance to the goal, update the target network weights to control updates to the Q-network and stabilise learning |
 
