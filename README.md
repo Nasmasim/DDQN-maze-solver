@@ -9,7 +9,7 @@ Deep DQN implementation to solve a randomly generated maze problem, where an age
 
 
 <p align="center">
-<img src= https://github.com/Nasmasim/DDQN-maze-solver/blob/main/results/maze_gif.gif width="50%">
+<img src= https://github.com/Nasmasim/DDQN-maze-solver/blob/main/results/maze_gif.gif width="30%">
 </p>
 
 
