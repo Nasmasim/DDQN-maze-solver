@@ -42,3 +42,4 @@ pip install opencv-python
 ## Running the model   
 ```python train_and_test.py --visualize```
 
+
